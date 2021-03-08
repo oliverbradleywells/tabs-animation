@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:regular,700');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+
+  width: 100%;
+  height: 100vh;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.tab {
+  width: 35rem;
+}
+
+.tab__header {
+  display: flex;
+}
+
+.tab__box {
+  flex: 1;
+
+  padding: 1rem 2rem;
+
+  border-radius: 4px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 3s;
+}
+
+.tab__box:hover {
+  background-color: rgb(0, 195, 255);
+}
+
+.tab__box--active, .tab__box--active:hover {
+  color: red;
+  background-color: plum;
+}
+
+.tabs__tab {
+  display: none;
+
+  padding: 2rem 0rem;
+
+  color: purple;
+  
+  line-height: 150%;
+}
+
+.tabs__tab--active {
+  display: block;
+}
